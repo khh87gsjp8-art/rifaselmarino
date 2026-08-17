@@ -6,7 +6,7 @@
     <title>Gran Rifa de Celulares</title>
     <style>
         body { font-family: sans-serif; background: #f8fafc; color: #0f172a; margin: 0; padding: 15px; }
-        .card { background: blue; border-radius: 12px; padding: 20px; margin-bottom: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center; }
+        .card { background: white; border-radius: 12px; padding: 20px; margin-bottom: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center; }
         .price { font-size: 1.2rem; font-weight: bold; color: #16a34a; background: #dcfce7; padding: 6px 12px; border-radius: 15px; display: inline-block; }
         .grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; margin-top: 15px; }
         .num-btn { padding: 12px 0; border: 2px solid #cbd5e1; background: white; border-radius: 8px; font-weight: bold; font-size: 1rem; }
@@ -62,8 +62,8 @@
     function enviarWhatsApp() {
         if (seleccionados.size === 0) return alert("Selecciona al menos un número");
         const lista = Array.from(seleccionados).sort().join(', ');
-        const numeroTelefono = "584127881727"; // Pon tu número aquí
-        const msg = `¡Hola! Quiero reservar los números: *${lista}* para la rifa del celular. Adjunto mi pago.`;
+        const numeroTelefono = "584127881727"; // Pon tu número aqu
+        const msg = `¡Hola! Quiero reservar los números: *${lista}* para la rifa del celular. Voy a pagar con.`;
         window.open(`https://wa.me/${numeroTelefono}?text=${encodeURIComponent(msg)}`, '_blank');
     }
 </script>
