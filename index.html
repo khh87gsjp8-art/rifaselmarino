@@ -63,7 +63,7 @@
         if (seleccionados.size === 0) return alert("Selecciona al menos un número");
         const lista = Array.from(seleccionados).sort().join(', ');
         const numeroTelefono = "584127881727"; // Pon tu número aqu
-        const msg = `¡Hola! Quiero reservar los números: *${lista}* para la rifa del celular. Voy a pagar con.`;
+        const msg = `¡Hola! Quiero reservar los números: *${lista}* para la rifa del celular. Voy a pagar con`;
         window.open(`https://wa.me/${numeroTelefono}?text=${encodeURIComponent(msg)}`, '_blank');
     }
 </script>
