@@ -41,6 +41,7 @@
 <script>
     const seleccionados = new Set();
     const grid = document.getElementById('grid');
+ const ocupados = ["05", "12", "99"]; // Pon aquí entre comillas los números vendidos
 
     for (let i = 0; i < 100; i++) {
         const num = String(i).padStart(2, '0');
@@ -62,7 +63,7 @@
     }
 
     function enviarWhatsApp() {
-        if (seleccionados.size === 0) return alert("Selecciona al menos un número");
+        if (seleccionados.size === 0) return alert("Selecciona al menos un número para poder reservar");
         const lista = Array.from(seleccionados).sort().join(', ');
         const numeroTelefono = "584127881727"; // Pon tu número aqu
         const msg = `¡Hola! Quiero reservar los números: *${lista}* para la rifa del celular. Voy a pagar con`;
