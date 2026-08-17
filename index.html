@@ -45,6 +45,8 @@
     for (let i = 0; i < 100; i++) {
         const num = String(i).padStart(2, '0');
         const btn = document.createElement('button');
+        const ocupados = ["05", "12", "99"]; // Pon aquí entre comillas los números vendidos
+
         btn.className = 'num-btn';
         btn.innerText = num;
         btn.onclick = () => {
