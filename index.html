@@ -62,7 +62,7 @@
     function enviarWhatsApp() {
         if (seleccionados.size === 0) return alert("Selecciona al menos un número");
         const lista = Array.from(seleccionados).sort().join(', ');
-        const numeroTelefono = "584120000000"; // Pon tu número aquí
+        const numeroTelefono = "584127881727"; // Pon tu número aquí
         const msg = `¡Hola! Quiero reservar los números: *${lista}* para la rifa del celular. Adjunto mi pago.`;
         window.open(`https://wa.me/${numeroTelefono}?text=${encodeURIComponent(msg)}`, '_blank');
     }
